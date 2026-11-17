@@ -1,0 +1,7 @@
+logs/
+*.err.log
+*.out.log
+*.wrapper.log
+JL-AUTO.exe
+JL-AUTO.xml
+WinSW-x64.exe

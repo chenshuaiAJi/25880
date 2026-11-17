@@ -1,0 +1,208 @@
+:root {
+  --jl-font: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  --jl-font-xs: 15px;
+  --jl-font-sm: 16px;
+  --jl-font-base: 18px;
+  --jl-font-md: 20px;
+  --jl-font-lg: 24px;
+  --jl-font-xl: 28px;
+  --jl-line: 1.65;
+  --jl-control-height: 44px;
+  --jl-control-height-lg: 48px;
+  --jl-radius: 8px;
+  --jl-page-pad: 20px 24px 28px;
+  --jl-gap: 12px;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--jl-font);
+  font-size: var(--jl-font-base);
+  line-height: var(--jl-line);
+  color: var(--color-text-1);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* —— 大字版：统一放大 Arco 控件 —— */
+.arco-btn {
+  height: var(--jl-control-height) !important;
+  padding: 0 18px !important;
+  font-size: var(--jl-font-base) !important;
+  border-radius: var(--jl-radius) !important;
+}
+
+.arco-btn-size-mini,
+.arco-btn-size-small {
+  height: 36px !important;
+  padding: 0 12px !important;
+  font-size: var(--jl-font-sm) !important;
+}
+
+.arco-btn-text.arco-btn-size-mini,
+.arco-btn-text.arco-btn-size-small {
+  height: auto !important;
+  padding: 4px 8px !important;
+}
+
+.arco-input-wrapper,
+.arco-select-view-single,
+.arco-picker,
+.arco-textarea-wrapper,
+.arco-input-number,
+.arco-input-tag {
+  min-height: var(--jl-control-height) !important;
+  font-size: var(--jl-font-base) !important;
+  border-radius: var(--jl-radius) !important;
+}
+
+.arco-input,
+.arco-select-view-value,
+.arco-picker-input input,
+.arco-textarea,
+.arco-input-number input {
+  font-size: var(--jl-font-base) !important;
+  line-height: var(--jl-line) !important;
+}
+
+.arco-select-view-single {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.arco-select-option,
+.arco-dropdown-option {
+  font-size: var(--jl-font-base) !important;
+  line-height: 1.5 !important;
+  padding: 10px 14px !important;
+}
+
+.arco-form-item-label,
+.arco-descriptions-item-label,
+.arco-descriptions-item-value {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-radio-button .arco-radio-button-content,
+.arco-radio-label,
+.arco-checkbox-label {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-radio-button {
+  height: var(--jl-control-height) !important;
+  line-height: var(--jl-control-height) !important;
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-pagination {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-pagination-item,
+.arco-pagination-item-previous,
+.arco-pagination-item-next {
+  min-width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: var(--jl-font-sm) !important;
+}
+
+.arco-modal-header .arco-modal-title,
+.arco-drawer-title {
+  font-size: var(--jl-font-lg) !important;
+  font-weight: 700 !important;
+}
+
+.arco-modal-body,
+.arco-drawer-body,
+.arco-modal-footer {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-alert {
+  font-size: var(--jl-font-base) !important;
+  padding: 12px 16px !important;
+  line-height: var(--jl-line) !important;
+}
+
+.arco-empty-description {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-menu-item,
+.arco-menu-inline-header {
+  font-size: var(--jl-font-md) !important;
+  line-height: 1.4 !important;
+  height: 52px !important;
+  margin-bottom: 4px !important;
+  border-radius: 8px !important;
+}
+
+.arco-menu-item .arco-icon,
+.arco-menu-inline-header .arco-icon {
+  font-size: 22px !important;
+}
+
+.arco-table {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-table-th {
+  font-size: var(--jl-font-sm) !important;
+  font-weight: 700 !important;
+  color: var(--color-text-1) !important;
+}
+
+.arco-table-td,
+.arco-table-th {
+  padding: 12px 14px !important;
+  line-height: 1.5 !important;
+}
+
+.arco-table-cell {
+  font-size: var(--jl-font-base) !important;
+}
+
+.arco-table-size-small .arco-table-td,
+.arco-table-size-small .arco-table-th {
+  padding: 10px 12px !important;
+}
+
+.arco-tabs-tab {
+  font-size: var(--jl-font-md) !important;
+  line-height: 1.4 !important;
+  padding: 10px 16px !important;
+}
+
+.arco-spin-tip,
+.arco-message-content,
+.arco-notification-content {
+  font-size: var(--jl-font-base) !important;
+}
+
+/* 页面通用标题 */
+.page h1 {
+  font-size: var(--jl-font-xl) !important;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.page h2,
+.page h3 {
+  font-size: var(--jl-font-lg) !important;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.page p,
+.page .hint {
+  font-size: var(--jl-font-base) !important;
+  line-height: var(--jl-line);
+  color: var(--color-text-2);
+}

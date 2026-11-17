@@ -1,0 +1,21 @@
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+.DS_Store
+frontend/dist/
+windows-service/logs/
+windows-service/JL-AUTO.exe
+windows-service/JL-AUTO.xml
+windows-service/WinSW-x64.exe
+
+# 本地业务资料与上传留存，不推远程
+file/
+*.xls
+*.xlsx
+*.dump
